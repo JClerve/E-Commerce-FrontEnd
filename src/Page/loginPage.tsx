@@ -103,7 +103,7 @@ const LoginPage = () => {
           </Button>
         </Box> */}
 
-        <Button variant="contained" color="primary" fullWidth>
+        <Button variant="contained" color="primary" fullWidth sx={{mb: '10px'}}>
           LOGIN
           </Button >
 
