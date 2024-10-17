@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 import {
   Box,
   Typography,
@@ -7,8 +7,10 @@ import {
   Button,
   Checkbox,
 } from "@mui/material";
-import LoginImage from "../assets/LoginImage.png";
+import LoginImage from "../assets/Login.Image.png";
 import Logo from "../assets/Logo.png";
+import LoginSideImage from "../assets/Login.Box.Background.png";
+// import LoginSideImage from "../assets/image.png";
 
 const LoginPage = () => {
   return (
@@ -22,21 +24,23 @@ const LoginPage = () => {
       {/* Left side with welcome message */}
       <Box
         sx={{
-          flex: 1,
+          flex: 2,
           background: "linear-gradient(to bottom right, #00c6ff, #0072ff)", // Blue gradient on the left side
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
-          padding: 4,
+        padding: 4,
           color: "white",
+          backgroundImage: `url(${LoginImage})`, // Background image
+          backgroundSize: "cover", // Cover the entire box
         }}
       >
-        <img
+        {/* <img
           src={LoginImage}
           alt="Login"
-          style={{ marginBottom: "16px", width: "200px", height: "200px" }}
-        />
+          style={{ marginBottom: "16px", width: "300px", height: "280px" }}
+        /> */}
         <Typography variant="h3" sx={{ fontWeight: "bold" }}>
           Welcome to Our Shopping Haven!🌟
         </Typography>
@@ -51,14 +55,14 @@ const LoginPage = () => {
       <Box
         sx={{
           flex: 1,
-          backgroundColor: "white",
+          backgroundImage: `url(${LoginSideImage})`, // Background image
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
           padding: 4,
           border: "2px solid #1976d2", // Blue border
           borderRadius: "8px", // Rounded corners
-          width: "300px", // Box width
+          width: "500px", // Box width
           height: "auto", // Auto height for dynamic content
         }}
       >
@@ -76,7 +80,7 @@ const LoginPage = () => {
           variant="h4"
           sx={{ fontWeight: "bold", mb: 2, textAlign: "center" }}
         >
-          Login
+          Login Page
         </Typography>
         <Typography variant="body1" sx={{ mb: 4, textAlign: "center" }}>
           Welcome! Login to get amazing discounts and offers only for you.
