@@ -1,12 +1,19 @@
-import React from "react";
-import LoginPage from "./Page/loginPage";
+
+import React from 'react'
+import LoginPage from './Page/loginPage'
+import AdminDashboardPage from './Page/admin.dashboardPage'
 import SignUp from "./pages/signUp";
+
 
 const App = () => {
   return (
     <div>
-      <LoginPage />
+
+<LoginPage/>
+<AdminDashboardPage/>
+
       <SignUp />
+
     </div>
   );
 };
