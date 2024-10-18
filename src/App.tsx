@@ -1,15 +1,21 @@
+
 import React from 'react'
 import LoginPage from './Page/loginPage'
 import AdminDashboardPage from './Page/admin.dashboardPage'
+import SignUp from "./pages/signUp";
+
 
 const App = () => {
   return (
     <div>
+
 <LoginPage/>
 <AdminDashboardPage/>
 
-    </div>
-  )
-}
+      <SignUp />
 
-export default App
+    </div>
+  );
+};
+
+export default App;
